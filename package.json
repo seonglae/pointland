@@ -24,7 +24,6 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "consola": "^2.15.0",
-    "core-js": "^3.17.2",
     "esbuild-node-loader": "^0.3.1",
     "layerspace": "^0.2.5",
     "nipplejs": "^0.9.0",
@@ -40,17 +39,23 @@
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/vuetify": "^1.12.1",
     "@types/favicons": "^6.2.2",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^7.11.1",
     "esno": "^0.9.1",
     "favicons": "^6.2.2",
+    "eslint-plugin-vue": "^7.17.0",
     "nodemon": "^2.0.12",
-    "prettier": "^2.3.1"
+    "prettier": "^2.4.1"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": 8080
+    }
   },
   "color": "#2f3437",
   "author": {
