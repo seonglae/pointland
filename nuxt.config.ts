@@ -27,7 +27,7 @@ const config: NuxtConfig = {
         content: 'seongland, pointland, 3d, seonglae, metaverse, webtaverse, pointcloud, threejs, potree',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/seongland.svg' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }],
   },
   plugins: [
     { src: '~/plugins/init/', ssr: false },
