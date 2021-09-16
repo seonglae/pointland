@@ -58,9 +58,10 @@ export default function useController() {
   function zNipple(nipple, space) {
     const holder = new ElementHold(nipple.el, 10)
     holder._holdStart()
-    holder.addEventListener('holding', (event) =>
+    holder.addEventListener('holding', (event) => {
+      space.controls.truck(((zControl.force * zControl.vector.x) / 100) * event?.deltaTime, 0, true)
       space.controls.truck(0, -((zControl.force * zControl.vector.y) / 100) * event?.deltaTime, true)
-    )
+    })
     nipple.on('move', (_, data) => {
       zControl.force = data.force
       zControl.vector = data.vector
