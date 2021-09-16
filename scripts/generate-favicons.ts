@@ -33,7 +33,7 @@ export default async () => {
       async (error, { files, images }) => {
         if (error) return reject(error)
         const targets = [...images, ...files]
-        const promises = targets.map(({ name, contents }) => write(join('public', name), contents))
+        const promises = targets.map(({ name, contents }) => write(join('src', 'static', name), contents))
         await Promise.all(promises)
         return resolve(null)
       }

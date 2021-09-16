@@ -12,7 +12,7 @@
     "favicon": "esmo scripts/build.ts",
     "stop": "pm2 delete pointland",
     "build": "cross-env NODE_ENV=production nuxt build",
-    "generate": "cross-env NODE_ENV=production nuxt generate",
+    "generate": "yarn favicon && cross-env NODE_ENV=production nuxt generate",
     "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "format": "prettier --write \"**/*.{ts,json,md,vue}\"  --ignore-path .gitignore"
   },
