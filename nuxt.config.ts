@@ -27,7 +27,10 @@ const config: NuxtConfig = {
         content: 'seongland, pointland, 3d, seonglae, metaverse, webtaverse, pointcloud, threejs, potree',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/seongland.svg' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
+      { rel: 'apple-touch-icon', sizes: '180x180', href: 'apple-touch-icon.png' },
+    ],
   },
   plugins: [
     { src: '~/plugins/init/', ssr: false },
@@ -43,21 +46,7 @@ const config: NuxtConfig = {
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', ['nuxt-vuex-localstorage', { localStorage: ['ls'] }], '@nuxtjs/sitemap'],
 
   // pwa
-  pwa: {
-    manifest: {
-      lang: 'en',
-      autoRegister: false,
-      workbox: {
-        runtimeCaching: [
-          {
-            urlPattern: 'https://storage.googleapis.com/potree-architecture/.*',
-            strategyOptions: { cacheName: 'potree' },
-            strategyPlugins: [{ use: 'Expiration', config: { maxEntries: 10000, maxAgeSeconds: 300000 } }],
-          },
-        ],
-      },
-    },
-  },
+  pwa: { manifest: { lang: 'en', autoRegister: false } },
 
   // Theme
   vuetify: {

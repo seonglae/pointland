@@ -10,7 +10,12 @@ export default ({ $axios }) => {
     data: () => ({
       title: process.env.title,
       meta: { version: undefined },
-      spaceOpt: { id: 'pointland', layers: { point: [] }, box: 'skybox', position: [10, 130, 50] }
-    })
+      spaceOpt: {
+        id: 'pointland',
+        layers: { point: [] },
+        box: 'skybox',
+        position: [10, 130, 50],
+      },
+    }),
   })
 }

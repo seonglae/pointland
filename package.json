@@ -3,16 +3,16 @@
   "version": "1.3.1",
   "private": true,
   "description": "Web Metaverse with Point Cloud",
-  "author": "seonglae",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon",
     "start": "cross-env NODE_ENV=production nuxt",
     "production": "pm2 delete pointland & pm2 start process.json",
     "restart": "pm2 restart pointland",
+    "favicon": "esmo scripts/build.ts",
     "stop": "pm2 delete pointland",
     "build": "cross-env NODE_ENV=production nuxt build",
-    "generate": "cross-env NODE_ENV=production nuxt generate",
+    "generate": "yarn favicon && cross-env NODE_ENV=production nuxt generate",
     "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
     "format": "prettier --write \"**/*.{ts,json,md,vue}\"  --ignore-path .gitignore"
   },
@@ -24,7 +24,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "consola": "^2.15.0",
-    "core-js": "^3.17.3",
+    "esbuild-node-loader": "^0.3.1",
     "layerspace": "^0.2.5",
     "nipplejs": "^0.9.0",
     "nuxt": "^2.15.8",
@@ -38,12 +38,15 @@
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/vuetify": "^1.12.1",
+    "@types/favicons": "^6.2.2",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "esno": "^0.9.1",
+    "favicons": "^6.2.2",
     "eslint-plugin-vue": "^7.17.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.4.1"
@@ -52,6 +55,27 @@
     "nuxt": {
       "host": "0.0.0.0",
       "port": 8080
+    }
+  },
+  "color": "#2f3437",
+  "author": {
+    "name": "Seonglae Cho",
+    "email": "sungle3737@gmail.com",
+    "url": "https://www.seongland.com",
+    "twitter": {
+      "name": "@SeonglaeC"
+    },
+    "github": {
+      "name": "seonglae",
+      "url": "https://github.com/seonglae"
+    },
+    "notion": {
+      "userId": "cc6eaf5cfcd5409ea6df675cb86c358f",
+      "rootId": "04089c8ae3534bf79512fc495944b321",
+      "spaceId": "0bf522c624684c7199e368f5a25d4225"
+    },
+    "linkedin": {
+      "name": "seonglae"
     }
   },
   "nodemonConfig": {
