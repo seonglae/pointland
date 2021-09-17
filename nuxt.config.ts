@@ -17,6 +17,13 @@ const config: NuxtConfig = {
   env: { title: process.env.title },
   head: {
     title: process.env.title,
+    script: [
+      {
+        src: 'https://static.cloudflareinsights.com/beacon.min.js',
+        defer: true,
+        ['data-cf-beacon']: '{"token": "8f27ea7e450344a5a9340d4cc3b3f1dd"}',
+      },
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
