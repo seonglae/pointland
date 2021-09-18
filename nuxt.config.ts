@@ -69,7 +69,7 @@ const config: NuxtConfig = {
   ],
 
   // pwa
-  pwa: { manifest: { lang: 'en', autoRegister: false, display: 'fullscreen' } },
+  pwa: { manifest: { lang: 'en', autoRegister: false, display: 'fullscreen', orientation: 'landscape' } },
 
   // Theme
   vuetify: {
