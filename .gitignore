@@ -10,6 +10,7 @@ build
 package-lock.json
 potree
 sw.*
+OneSignalSDK*
 sw.js
 manifest.json
 mstile*

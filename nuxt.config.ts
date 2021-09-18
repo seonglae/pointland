@@ -39,6 +39,16 @@ const config: NuxtConfig = {
       { rel: 'apple-touch-icon', sizes: '180x180', href: 'apple-touch-icon.png' },
     ],
   },
+  oneSignal: {
+    init: {
+      cdn: true,
+      appId: '251432f5-ba16-48c3-a22b-127673568632',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: false,
+      },
+    },
+  },
   plugins: [
     { src: '~/plugins/init/', ssr: false },
     { src: '~/plugins/init/config', ssr: false },
@@ -50,10 +60,16 @@ const config: NuxtConfig = {
   },
   components: true,
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify', '@nuxtjs/composition-api/module'],
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', ['nuxt-vuex-localstorage', { localStorage: ['ls'] }], '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/onesignal',
+    '@nuxtjs/axios',
+    '@nuxtjs/pwa',
+    ['nuxt-vuex-localstorage', { localStorage: ['ls'] }],
+    '@nuxtjs/sitemap',
+  ],
 
   // pwa
-  pwa: { manifest: { lang: 'en', autoRegister: false } },
+  pwa: { manifest: { lang: 'en', autoRegister: false, display: 'fullscreen' } },
 
   // Theme
   vuetify: {
