@@ -7,10 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon",
     "start": "cross-env NODE_ENV=production nuxt",
-    "production": "pm2 delete pointland & pm2 start process.json",
-    "restart": "pm2 restart pointland",
     "favicon": "esmo scripts/build.ts",
-    "stop": "pm2 delete pointland",
     "build": "cross-env NODE_ENV=production nuxt build",
     "generate": "yarn favicon && cross-env NODE_ENV=production nuxt generate",
     "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
@@ -21,7 +18,6 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/composition-api": "^0.29.0",
-    "@nuxtjs/onesignal": "^3.0.0-beta.16",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "consola": "^2.15.0",

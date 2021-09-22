@@ -14,7 +14,7 @@ import usePointland from '@/composables/usePointland'
 import useController from '@/composables/useController'
 
 export default defineComponent({
-  setup(props, context) {
+  setup(_, context) {
     const store = useStore()
     const move = reactive({ move: { camera: false, vertical: false, target: false } })
     const { startLand } = usePointland(store, context.root)
