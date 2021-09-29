@@ -21,7 +21,7 @@
     "@nuxtjs/pwa": "3.0.0-beta.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "consola": "^2.15.0",
-    "esbuild-node-loader": "^0.3.1",
+    "esbuild-node-loader": "^0.4.1",
     "layerspace": "^0.2.5",
     "nipplejs": "^0.9.0",
     "nuxt": "^2.15.8",
