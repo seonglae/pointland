@@ -46,7 +46,7 @@
     "esno": "^0.10.1",
     "favicons": "^6.2.2",
     "nodemon": "^2.0.13",
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.1"
   },
   "config": {
     "nuxt": {
