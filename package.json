@@ -43,7 +43,7 @@
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.5.0",
-    "esno": "^0.14.1",
+    "esno": "^0.15.0",
     "favicons": "^6.2.2",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.0"
