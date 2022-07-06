@@ -45,7 +45,7 @@
     "eslint-plugin-vue": "^8.5.0",
     "esno": "^0.14.1",
     "favicons": "^6.2.2",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.19",
     "prettier": "^2.6.0"
   },
   "config": {
